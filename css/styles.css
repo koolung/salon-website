@@ -1,0 +1,248 @@
+/* styles.css */
+:root {
+  --accent-color: #ba996d;
+  --accent-dark-color: #bf8040;
+  --font-color: #595959;
+  --bg-color: white;
+}
+
+body {
+  background: linear-gradient(#996633, #E3BD71);
+  font-family: Helvetica, sans-serif;
+  color: var(--font-color);
+}
+
+main {
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 5px 10px;
+}
+
+a:link {
+  color: var(--font-color);
+}
+
+a:visited {
+  color: var(--font-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+a:active {
+  color: var(--accent-color);
+}
+
+header {
+  top: -10px;
+  left: -5px;
+  width: 1887px;
+  background: linear-gradient(#E3BD71, white);
+  padding: 5px 0;
+  margin: 0;
+}
+
+header h1 {
+  color: var(--accent-color);
+  font-size: 3rem;
+  margin: 10px 10px;
+  text-shadow: 2px 2px 3px gray;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 8px 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: var(--accent-color);
+}
+
+.feature {
+  border-radius: 10px;
+  background: white;
+  padding: 2px 15px;
+  margin: 10px 0;
+}
+
+.feature a {
+  text-decoration: none;
+}
+
+//gallery
+div.gallery {
+  margin: 5px;
+  margin-bottom: 0;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+@keyframes lowerAd {
+  from { top: -80px; }
+  to { top: 40px; }
+}
+
+
+#advertisement1 {
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 80px;
+  bottom: 740px;
+  width: 60px;
+  height: 30px;
+  background: #E3BD71;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out;
+}
+
+#advertisement2 {
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 150px;
+  bottom: 670px;
+  width: 60px;
+  height: 30px;
+  background: #E3BD71;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+}
+
+#advertisement3 {
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 220px;
+  bottom: 600px;
+  width: 60px;
+  height: 30px;
+  background: #E3BD71;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+}
+
+#advertisement4 {
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 290px;
+  bottom: 530px;
+  width: 60px;
+  height: 30px;
+  background: #E3BD71;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+}
+
+#advertisement5 {
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 360px;
+  bottom: 460px;
+  width: 60px;
+  height: 30px;
+  background: #E3BD71;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+}
+
+#advertisement1:hover, #advertisement2:hover, #advertisement3:hover, #advertisement4:hover, #advertisement5:hover {
+  transform: scale(1.2, 1);
+  background-color: #ba996d;
+}
+
+.restaurant-photo {
+  position: relative;
+}
+
+.stars {
+  position: absolute;
+  top: 220px;
+  left: 10px;
+  width: 180px;
+}
+
+.review {
+  border-radius: 5px;
+  background: white;
+  padding: 2px 15px;
+  margin: 10px 0;
+  font-size: smaller;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 8px;
+}
+
+form div {
+  margin-bottom: 8px;
+}
+
+input, select, textarea {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], input[type=date] {
+  width: auto;
+}
+
+button {
+  width: 100px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent-dark-color);
+}
