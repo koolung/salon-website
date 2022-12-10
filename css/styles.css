@@ -37,11 +37,13 @@ a:active {
 header {
   top: -10px;
   left: -5px;
-  width: 1887px;
+  width: 100%;
   background: linear-gradient(#E3BD71, white);
   padding: 5px 0;
   margin: 0;
 }
+
+
 
 header h1 {
   color: var(--accent-color);
@@ -114,8 +116,8 @@ div.desc {
   text-align: center;
   position: fixed;
   right: 30px;
-  top: 80px;
-  bottom: 740px;
+  top: 150px;
+  bottom: 670px;
   width: 60px;
   height: 30px;
   background: #E3BD71;
@@ -126,21 +128,6 @@ div.desc {
 }
 
 #advertisement2 {
-  text-align: center;
-  position: fixed;
-  right: 30px;
-  top: 150px;
-  bottom: 670px;
-  width: 60px;
-  height: 30px;
-  background: #E3BD71;
-  box-shadow: 5px 5px;
-  padding: 10px;
-  border-radius: 50px;
-  transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
-}
-
-#advertisement3 {
   text-align: center;
   position: fixed;
   right: 30px;
@@ -155,7 +142,7 @@ div.desc {
   transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
 }
 
-#advertisement4 {
+#advertisement3 {
   text-align: center;
   position: fixed;
   right: 30px;
@@ -170,12 +157,27 @@ div.desc {
   transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
 }
 
-#advertisement5 {
+#advertisement4 {
   text-align: center;
   position: fixed;
   right: 30px;
   top: 360px;
   bottom: 460px;
+  width: 60px;
+  height: 30px;
+  background: #E3BD71;
+  box-shadow: 5px 5px;
+  padding: 10px;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+}
+
+#advertisement5 {
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 430px;
+  bottom: 390px;
   width: 60px;
   height: 30px;
   background: #E3BD71;
@@ -245,4 +247,19 @@ button {
 
 button:hover {
   background-color: var(--accent-dark-color);
+}
+
+iframe { 
+  width: 600px;
+}
+
+@media (max-width: 768px) {
+  iframe { 
+    width: 100%;
+  }
+
+  nav li a {
+    text-decoration: none;
+    padding: 20px 20px;
+  }
 }
