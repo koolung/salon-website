@@ -262,4 +262,79 @@ iframe {
     text-decoration: none;
     padding: 20px 20px;
   }
+
+  #advertisement1 {
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 150px;
+    bottom: 670px;
+    width: 40px;
+    height: 30px;
+    background: #E3BD71;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out;
+  }
+  
+  #advertisement2 {
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 220px;
+    bottom: 600px;
+    width: 40px;
+    height: 30px;
+    background: #E3BD71;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+  }
+  
+  #advertisement3 {
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 290px;
+    bottom: 530px;
+    width: 40px;
+    height: 30px;
+    background: #E3BD71;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+  }
+  
+  #advertisement4 {
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 360px;
+    bottom: 460px;
+    width: 40px;
+    height: 30px;
+    background: #E3BD71;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+  }
+  
+  #advertisement5 {
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 430px;
+    bottom: 390px;
+    width: 40px;
+    height: 30px;
+    background: #E3BD71;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    border-radius: 50px;
+    transition: all 200ms ease-in-out; //I could probs apply this to when navigating to the top
+  }
 }
