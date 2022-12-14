@@ -7,13 +7,14 @@
 
 
     //Database connection
-    $conn = new mysqli('localhost', 'root', '', 'test');
+    $conn = new mysqli('localhost', 'root', '', 'booking');
     if($conn->connect_error){
+        echo "$conn->connect_error";
         die('Connection Failed  :  '.$conn->connect_error);
     }else{
-        $stmt = $conn->prepare("insert into registration(name, time, date, service, details)
-        values(?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param('iiiii', $name, $time, $date, $service, $details);  
+        $stmt = $conn->prepare("insert into bookings(name, time, date, service, details)
+        values(?, ?, ?, ?, ?)");
+        $stmt->bind_param('siiss', $name, $time, $date, $service, $details);  
         $stmt->execute();
         echo "booking successful...";
         $stmt->close();
