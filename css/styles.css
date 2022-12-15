@@ -215,7 +215,7 @@ iframe {
 }
 
 img.homephoto {
-  width: 100%;
+  width: 60%;
   height: auto;
   left: 0px;
   right: 0px;
@@ -230,9 +230,11 @@ img.homephoto {
     text-decoration: none;
     padding: 20px 4%;
   }
-
-
-
-
-
+  
+  img.homephoto {
+    width: 100%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+  }
 }
