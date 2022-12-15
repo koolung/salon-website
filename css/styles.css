@@ -83,33 +83,13 @@ nav li a:hover {
   text-decoration: none;
 }
 
-//gallery
-div.gallery {
-  margin: 5px;
-  margin-bottom: 0;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
 
 @keyframes lowerAd {
   from { top: -80px; }
   to { top: 40px; }
 }
+
 
 
 #advertisement1 {
@@ -192,25 +172,6 @@ div.desc {
   background-color: #ba996d;
 }
 
-.restaurant-photo {
-  position: relative;
-}
-
-.stars {
-  position: absolute;
-  top: 220px;
-  left: 10px;
-  width: 180px;
-}
-
-.review {
-  border-radius: 5px;
-  background: white;
-  padding: 2px 15px;
-  margin: 10px 0;
-  font-size: smaller;
-}
-
 label {
   width: 100px;
   display: inline-block;
@@ -253,6 +214,13 @@ iframe {
   width: 600px;
 }
 
+img.homephoto {
+  width: 20%;
+  height: auto;
+  left: 0px;
+  right: 0px;
+}
+
 @media (max-width: 768px) {
   iframe { 
     width: 100%;
@@ -260,7 +228,11 @@ iframe {
 
   nav li a {
     text-decoration: none;
-    padding: 20px 20px;
+    padding: 20px 4%;
   }
+
+
+
+
 
 }
