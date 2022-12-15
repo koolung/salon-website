@@ -19,5 +19,7 @@
         echo "booking successful...";
         $stmt->close();
         $conn->close();
+        echo '<script>alert("Booking was successful!")</script>';
+        echo '<script>window.location.href="index.html";</script>';
     }
     ?>

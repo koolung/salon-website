@@ -46,6 +46,11 @@
                <input type="text" class="form-control" id="name" name="name" required>
             </div>
             <div>
+               <label for="email">Email:</label>
+               <input type="email" placeholder="youremail@example.com" class="form-control" 
+               id="email" name="email" pattern=".+@.+.com" required>
+            </div>
+            <div>
                <label for="time">Time:</label>
                <select id="time" name="time" required>
                   <option value="">Choose one...</option>
@@ -82,7 +87,8 @@
             </div>
             <div>
                <label for="details">Details:</label>
-               <textarea id="details" name="details" rows="5" cols="40" required></textarea>
+               <textarea id="details" name="details" rows="5" cols="40" 
+               placeholder="basic trimming with iron perm"required></textarea>
             </div>
             <button>Submit</button>
          </form>
