@@ -7,13 +7,14 @@
 
     if(isset($_POST['submit'])) {
         $email = $_POST['email'];
-        $message = "this is message content";
+        $from = "koolung22@gmail.com";
+        $message = "The booking for ".$name." has been successfully made for ".$time." on ".$date." for ".$service." with the following details: ".$details."";
 
-        $to = "koolung432@gmail.com";
-        $subject = "example subject";
+        $to = $email;
+        $subject = "Beaute Lia Hair Booking Information";
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: '.$email.'<'.$email.'>' . "\r\n".'Reply-To: '.$email."\r\n" . 'X-Mailer: PHP/' . phpversion();
+        $headers .= 'From: '.$from.'<'.$from.'>' . "\r\n".'Reply-To: '.$from."\r\n" . 'X-Mailer: PHP/' . phpversion();
         $message = '<!doctype html>
                 <html lang="en">
                 <head>
@@ -27,16 +28,14 @@
                 <span class="preheader" style="color: transparent; display: none; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">'.$message.'</span>
                     <div class="container">
                      '.$message.'<br/>
-                        Regards<br/>
-                      '.$email.'
                     </div>
                 </body>
                 </html>';
         $result = @mail($to, $subject, $message, $headers);
+        $result = @mail($from, $subject, $message, $headers);
 
-        echo '<script>alert("email sent!")</script>';
+        echo '<script>alert("Booking information sent to your email")</script>';
     }
-
 
     //Database connection
     $conn = new mysqli('localhost', 'root', '', 'booking');
@@ -51,7 +50,7 @@
         echo "booking successful...";
         $stmt->close();
         $conn->close();
-        echo '<script>alert("Booking was successful!")</script>';
+        echo '<script>alert("Booking was successful! If you can not find the email, please check the spam folder in your inbox")</script>';
         echo '<script>window.location.href="index.html";</script>';
     }
     ?>
