@@ -221,6 +221,26 @@ img.homephoto {
   right: 0px;
 }
 
+img.menu {
+  width: 100%;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  padding-bottom: 50px;
+}
+
+img.review {
+  width: 100%;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  padding-top: 20px;
+}
+
+#price {
+  border-bottom: 1px solid #aaa;
+}
+
 @media (max-width: 768px) {
   iframe { 
     width: 100%;
@@ -236,5 +256,21 @@ img.homephoto {
     height: auto;
     left: 0px;
     right: 0px;
+  }
+
+  img.menu {
+    width: 60%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 50px;
+  }
+  
+  img.review {
+    width: 60%;
+    height: auto;
+    left: 0px;
+    right: 0px;
+    padding-top: 20px;
   }
 }
